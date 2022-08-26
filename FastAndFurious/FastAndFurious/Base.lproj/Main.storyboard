@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6z4-Qz-NKJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="lato-extrabold.ttf">
+            <string>Lato-ExtraBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--AccountVC-->
+        <scene sceneID="BPX-j5-Fu1">
+            <objects>
+                <viewController storyboardIdentifier="AccountVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ywe-00-dBO" customClass="AccountVC" customModule="FastAndFurious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oZj-Wj-gDj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlS-RT-gpg">
+                                <rect key="frame" x="162" y="433.5" width="90.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-ExtraBold" family="Lato" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yTh-G1-RyJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HlS-RT-gpg" firstAttribute="centerY" secondItem="oZj-Wj-gDj" secondAttribute="centerY" id="EcD-ph-CPR"/>
+                            <constraint firstItem="HlS-RT-gpg" firstAttribute="centerX" secondItem="oZj-Wj-gDj" secondAttribute="centerX" id="Zqf-Bn-zH7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Naf-Ht-4wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="23"/>
+        </scene>
+        <!--Tabbar View Controller-->
+        <scene sceneID="vOJ-HF-DOS">
+            <objects>
+                <viewController storyboardIdentifier="TabbarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6z4-Qz-NKJ" customClass="TabbarViewController" customModule="FastAndFurious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4M-Pd-gYi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEI-5c-brO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8f-aW-74e">
+                                <rect key="frame" x="16" y="786" width="382" height="60"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7o4-JX-vld">
+                                        <rect key="frame" x="4" y="0.0" width="374" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1er-nH-DVe">
+                                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="home"/>
+                                                <state key="selected" image="home-selected"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonTapped:" destination="6z4-Qz-NKJ" eventType="touchUpInside" id="3Rh-a1-AFU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wR8-pn-qRN">
+                                                <rect key="frame" x="93.5" y="0.0" width="93.5" height="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="explore"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonTapped:" destination="6z4-Qz-NKJ" eventType="touchUpInside" id="DWO-m5-Btz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxD-Yy-5v9">
+                                                <rect key="frame" x="187" y="0.0" width="93.5" height="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="analytics"/>
+                                                <state key="selected" image="analytics-selected"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonTapped:" destination="6z4-Qz-NKJ" eventType="touchUpInside" id="9pV-Ik-SlF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-0G-t6i">
+                                                <rect key="frame" x="280.5" y="0.0" width="93.5" height="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="account"/>
+                                                <connections>
+                                                    <action selector="tabBarButtonTapped:" destination="6z4-Qz-NKJ" eventType="touchUpInside" id="K6C-Ih-hUc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HCp-Bl-Iwq"/>
+                                    <constraint firstItem="7o4-JX-vld" firstAttribute="top" secondItem="v8f-aW-74e" secondAttribute="top" id="Ozc-zh-FRl"/>
+                                    <constraint firstAttribute="bottom" secondItem="7o4-JX-vld" secondAttribute="bottom" id="YjF-wo-zkl"/>
+                                    <constraint firstAttribute="trailing" secondItem="7o4-JX-vld" secondAttribute="trailing" constant="4" id="Z9y-hS-jO1"/>
+                                    <constraint firstItem="7o4-JX-vld" firstAttribute="leading" secondItem="v8f-aW-74e" secondAttribute="leading" constant="4" id="rSw-Z9-h0n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yno-NB-EoI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yno-NB-EoI" firstAttribute="trailing" secondItem="v8f-aW-74e" secondAttribute="trailing" constant="16" id="4Uk-QG-Znl"/>
+                            <constraint firstItem="yno-NB-EoI" firstAttribute="bottom" secondItem="HEI-5c-brO" secondAttribute="bottom" id="5Rm-2X-Hd0"/>
+                            <constraint firstItem="yno-NB-EoI" firstAttribute="trailing" secondItem="HEI-5c-brO" secondAttribute="trailing" id="D8P-P6-Q0m"/>
+                            <constraint firstItem="yno-NB-EoI" firstAttribute="bottom" secondItem="v8f-aW-74e" secondAttribute="bottom" constant="16" id="NN4-di-gRJ"/>
+                            <constraint firstItem="HEI-5c-brO" firstAttribute="leading" secondItem="yno-NB-EoI" secondAttribute="leading" id="UvB-uN-mwj"/>
+                            <constraint firstItem="v8f-aW-74e" firstAttribute="leading" secondItem="yno-NB-EoI" secondAttribute="leading" constant="16" id="WOS-PZ-Nzx"/>
+                            <constraint firstItem="HEI-5c-brO" firstAttribute="top" secondItem="yno-NB-EoI" secondAttribute="top" id="eXw-39-col"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="HEI-5c-brO" id="4uD-Hv-NRY"/>
+                        <outlet property="stackView" destination="7o4-JX-vld" id="d63-Np-mVy"/>
+                        <outlet property="tabView" destination="v8f-aW-74e" id="uLf-QC-r9V"/>
+                        <outletCollection property="tabbarButtons" destination="1er-nH-DVe" collectionClass="NSMutableArray" id="gJ4-DA-mcT"/>
+                        <outletCollection property="tabbarButtons" destination="wR8-pn-qRN" collectionClass="NSMutableArray" id="rmQ-YC-vte"/>
+                        <outletCollection property="tabbarButtons" destination="nxD-Yy-5v9" collectionClass="NSMutableArray" id="d7u-uh-rOZ"/>
+                        <outletCollection property="tabbarButtons" destination="7ES-0G-t6i" collectionClass="NSMutableArray" id="hvg-Tr-pd6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ThK-L9-kFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-798.55072463768124" y="-132.58928571428572"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeVC" customModule="FastAndFurious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="18"/>
+        </scene>
+        <!--AnalyticsVC-->
+        <scene sceneID="fX7-5n-GxA">
+            <objects>
+                <viewController storyboardIdentifier="AnalyticsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ieo-ib-rk6" customClass="AnalyticsVC" customModule="FastAndFurious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b0t-bi-0X3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ijm-sy-vOy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fan-Q0-QQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="19"/>
+        </scene>
+        <!--ExploreVC-->
+        <scene sceneID="w2s-gf-SuU">
+            <objects>
+                <viewController storyboardIdentifier="ExploreVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bhQ-FR-zr7" customClass="ExploreVC" customModule="FastAndFurious" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="STX-7a-5F5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSD-AN-ge6">
+                                <rect key="frame" x="165.5" y="433.5" width="83" height="29"/>
+                                <fontDescription key="fontDescription" name="Lato-ExtraBold" family="Lato" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QX3-sz-mGP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PSD-AN-ge6" firstAttribute="centerY" secondItem="STX-7a-5F5" secondAttribute="centerY" id="2FA-y0-xj1"/>
+                            <constraint firstItem="PSD-AN-ge6" firstAttribute="centerX" secondItem="STX-7a-5F5" secondAttribute="centerX" id="icb-E6-V9u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1G-eO-f9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account" width="24" height="24"/>
+        <image name="analytics" width="24" height="24"/>
+        <image name="analytics-selected" width="116" height="36"/>
+        <image name="explore" width="24" height="24"/>
+        <image name="home" width="24" height="24"/>
+        <image name="home-selected" width="98" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
